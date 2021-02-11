@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
-import { useGlobalcontext } from './context'
+import { useGlobalContext } from './context'
 
 const Submenu=() => {
   const {
@@ -8,7 +8,7 @@ const Submenu=() => {
     location,
   }=useGlobalContext()
   const container=useRef( null )
-  const [columns, setColumnns]=useState( 'col-2' )
+  const [columns, setColumns]=useState( 'col-2' )
   useEffect( () => {
     setColumns( 'col-2' )
     const submenu=container.current
@@ -22,7 +22,7 @@ const Submenu=() => {
   }, [page, location, links])
   
   return (
-    <aside classNmae={`${isSubmenuOpen? 'submenu show':'submenu'}`} ref={container}>
+    <aside className={`${isSubmenuOpen ? 'submenu show':'submenu'}`} ref={container}>
       <section>
         <h4>{page}</h4>
         <div className={`submenu-center ${columns}`}>
