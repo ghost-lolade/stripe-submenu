@@ -25,6 +25,13 @@ const sublinks = [
       { label: 'customers', icon: <FaBriefcase />, url: '/products' },
     ],
   },
+  {
+    page: 'pricing',
+    links: [
+      { label: 'about', icon: <FaBriefcase />, url: '/products' },
+      { label: 'customers', icon: <FaBriefcase />, url: '/products' },
+    ],
+  },
 ];
 
 export default sublinks;

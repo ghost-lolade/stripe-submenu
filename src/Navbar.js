@@ -42,6 +42,11 @@ const Navbar=() => {
               company
             </button>
           </li>
+          <li>
+            <button className='link-btn' onMouseOver={displaySubmenu}>
+              pricing
+            </button>
+          </li>
         </ul>
         <button className='btn signin-btn'>Sign in</button>
       </div>
